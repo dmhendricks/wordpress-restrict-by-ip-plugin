@@ -32,4 +32,4 @@ Release changes are noted on the [Releases](https://github.com/cloudverve/restri
 
 ## Screenshot
 
-![Settings Page - Options Tab](https://raw.githubusercontent.com/cloudverve/restrict-by-ip/master/assets/screenshot-1.png "Settings Page")
+![Network Settings Page](https://raw.githubusercontent.com/dmhendricks/wordpress-restrict-by-ip-plugin/master/assets/screenshot-1.png "Network Settings Page")
