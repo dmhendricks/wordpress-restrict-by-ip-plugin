@@ -1,0 +1,16 @@
+{
+  "prefix": "rbip",
+  "short_name": "IP Restrict",
+  "object_cache": {
+    "group": "restrict_by_ip_cache",
+    "expire_hours": 72
+  },
+  "dependencies": {
+    "php": "7.0",
+    "carbon_fields": "2.2.0",
+    "wordpress-toolkit": "0.2.0"
+  },
+  "network": {
+    "default_options_container": "network_restrict_ip"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "restrict-by-ip",
+  "dependencies": {
+    "jq.waituntilexists": "*"
+  },
+  "private": true
+}

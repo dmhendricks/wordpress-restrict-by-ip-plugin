@@ -1,0 +1,35 @@
+{
+  "name": "cloudverve/restrict-by-ip",
+  "type": "wordpress-plugin",
+  "description": "A bloilerplate for WordPress plugins",
+  "keywords": ["wordpress", "plugin", "boilerplate", "carbonfields"],
+  "homepage": "https://2lab.net",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Daniel M. Hendricks",
+      "homepage": "https://danhendricks.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cloudverve/restrict-by-ip/issues/",
+    "wiki": "https://github.com/cloudverve/restrict-by-ip/wiki/",
+    "source": "https://github.com/cloudverve/restrict-by-ip/"
+  },
+  "require": {
+    "php": ">=7.0",
+    "tgmpa/tgm-plugin-activation": "^2.6.1",
+    "tareq1988/wordpress-settings-api-class": "dev-master",
+    "htmlburger/carbon-fields": "dev-master#79061d1603673c8fb873e67c743f5abae0564ebf",
+    "dmhendricks/wordpress-toolkit": "0.3.0",
+    "composer/installers": "^1.5"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "CloudVerve\\RestrictByIP\\": "app/",
+      "Carbon_Fields\\Datastore\\Datastore\\": "app/Datastores/"
+    }
+  }
+}
