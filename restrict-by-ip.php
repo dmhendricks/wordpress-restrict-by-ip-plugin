@@ -37,4 +37,4 @@ require( __DIR__ . '/vendor/autoload.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 // Initialize plugin
-new \CloudVerve\RestrictByIP\Plugin();
+if( !defined( 'RBIP_DISABLE_PLUGIN' ) && !RBIP_DISABLE_PLUGIN ) new \CloudVerve\RestrictByIP\Plugin();
