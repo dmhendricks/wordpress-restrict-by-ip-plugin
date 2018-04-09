@@ -41,8 +41,6 @@ class Network_Settings_Page extends Plugin {
     Container::make( 'network', self::$config->get( 'network/default_options_container' ), __( 'Restrict by IP', self::$textdomain ) )
       ->set_page_parent( 'settings.php' )
       ->add_tab( __( 'General', self::$textdomain ), array(
-        Field::make( 'html', $this->prefix( 'html_network_general_lockout_help' ) )
-          ->set_html( '<h3>Important!</h3><p>If you are the administrator and completely lock yourself out, you can temporarily disable this plugin via (S)FTP by renaming its directory in <tt>wp-content/plugins</tt>. Be careful, as this is a last resort.</p>' ),
         Field::make( 'separator', $this->prefix( 'placeholder_network_general_features' ), __( 'Features', self::$textdomain ) ),
         Field::make( 'checkbox', $this->prefix( 'enabled' ), __( 'Enabled', self::$textdomain ) )
           ->set_default_value( true )

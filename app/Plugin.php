@@ -282,8 +282,11 @@ class Plugin extends \WordPress_ToolKit\ToolKit {
   }
 
   public function is_ipv4( $ip_address ) {
-    //return preg_match('/^(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/', $ip_address);
     return filter_var( $ip_address, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 );
+  }
+
+  public function is_ipv6( $ip_address ) {
+    return filter_var( $ip_address, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6 );
   }
 
 }
